@@ -12,13 +12,7 @@ public class Practice1 {
 		Fox foxes[] = new Fox[numberfox];
 		Lion lions[] = new Lion[numberlion];
 		Wolf wolves[] = new Wolf[numberwolf];
-		
-
-		//int Foxes[] = new int[numberfox];
-		//int Lions[] = new int[numberlion];
-		//int Wolves[] = new int[numberwolf];
-
-
+			
 		for(int i=0; i<numberfox; i++){
 			
 			foxes[i] = new Fox();
