@@ -9,42 +9,44 @@ public class Practice1 {
 
 		System.out.println("There are " + totalnumber + " animals in the zoo.");
 
-		Fox foxes = new Fox();
-		Lion lions = new Lion();
-		Wolf wolves = new Wolf();
-		int Foxes[] = new int[numberfox];
-		int Lions[] = new int[numberlion];
-		int Wolves[] = new int[numberwolf];
+		Fox foxes[] = new Fox[numberfox];
+		Lion lions[] = new Lion[numberlion];
+		Wolf wolves[] = new Wolf[numberwolf];
+		
+
+		//int Foxes[] = new int[numberfox];
+		//int Lions[] = new int[numberlion];
+		//int Wolves[] = new int[numberwolf];
 
 
 		for(int i=0; i<numberfox; i++){
+			
+			foxes[i] = new Fox();
 
-			foxes.setName(i);
-			System.out.println("Animal " + foxes.getName());
-			foxes.Talk();
-
-			Foxes[i] = foxes.getName();
-
+			foxes[i].setName(i);
+			System.out.println("Animal " + foxes[i].getName());
+			foxes[i].Talk();
+			
 		}
 
 		for(int i=0; i<numberlion; i++){
 
-			lions.setName(i);
-			System.out.println("Animal " + (lions.getName() + numberfox));
-			lions.Talk();
+			lions[i] = new Lion();
 
-			Lions[i] = lions.getName();
-		
+			lions[i].setName(i);
+			System.out.println("Animal " + (lions[i].getName() + numberfox));
+			lions[i].Talk();
+					
 		}
 
 		for(int i=0; i<numberwolf; i++){
 
-			wolves.setName(i);
-			System.out.println("Animal " + (wolves.getName() + numberfox + numberlion));
-			wolves.Talk();
+			wolves[i] = new Wolf();
 
-			Wolves[i] = wolves.getName();
-		
+			wolves[i].setName(i);
+			System.out.println("Animal " + (wolves[i].getName() + numberfox + numberlion));
+			wolves[i].Talk();
+					
 		}
 
 
